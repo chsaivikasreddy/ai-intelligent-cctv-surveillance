@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Intelligent Border Surveillance</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="top-header">
+
+        <div>
+
+            <h1>
+                🛡️ Intelligent Border Surveillance
+            </h1>
+
+            <p>
+                AI-Based Video Analytics Platform
+            </p>
+
+        </div>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            SYSTEM ONLINE
+
+        </div>
+
+    </header>
+
+
+
+    <main class="dashboard">
+
+
+        <!-- ========================= -->
+        <!-- LIVE SURVEILLANCE -->
+        <!-- ========================= -->
+
+        <section class="live-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Live Surveillance
+                    </h2>
+
+                    <p>
+                        AI-powered person detection and tracking
+                    </p>
+
+                </div>
+
+
+                <span class="live-status">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+
+            <!-- CAMERA -->
+
+            <div class="camera-container">
+
+                <img
+                    id="camera-feed"
+                    src="http://127.0.0.1:8000/video"
+                    alt="Live CCTV Feed"
+                >
+
+            </div>
+
+
+
+            <!-- INTRUSION ALERT -->
+
+            <div
+                id="intrusion-alert"
+                class="intrusion-alert"
+            >
+
+                <span id="alert-message">
+
+                    🟢 System monitoring —
+                    No recent intrusion
+
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- STATISTICS -->
+        <!-- ========================= -->
+
+        <section class="stats-grid">
+
+
+            <!-- TOTAL EVENTS -->
+
+            <div class="stat-card">
+
+                <h3>
+                    Total Events
+                </h3>
+
+                <div
+                    id="total-events"
+                    class="stat-number"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <!-- INTRUSIONS -->
+
+            <div class="stat-card">
+
+                <h3>
+                    Intrusions
+                </h3>
+
+                <div
+                    id="intrusion-events"
+                    class="stat-number"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <!-- HIGH RISK -->
+
+            <div class="stat-card">
+
+                <h3>
+                    High Risk
+                </h3>
+
+                <div
+                    id="high-risk-events"
+                    class="stat-number"
+                >
+                    0
+                </div>
+
+            </div>
+
+
+
+            <!-- SYSTEM STATUS -->
+
+            <div class="stat-card">
+
+                <h3>
+                    System Status
+                </h3>
+
+                <div
+                    id="system-status-card"
+                    class="stat-number"
+                >
+                    ONLINE
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- SECURITY EVENTS -->
+        <!-- ========================= -->
+
+        <section class="events-section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Security Events
+                    </h2>
+
+                    <p>
+                        Recent detected security incidents
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+
+                <table>
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Event
+                            </th>
+
+                            <th>
+                                Person
+                            </th>
+
+                            <th>
+                                Zone
+                            </th>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Time
+                            </th>
+
+                            <th>
+                                Risk
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody id="events-table">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                Loading events...
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
